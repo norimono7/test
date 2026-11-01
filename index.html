@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="もやしを炒めるだけでごちそうに。毎日の献立に使える15の簡単レシピ。" />
+    <title>もやし炒め図鑑 | 15のごちそうレシピ</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Klee+One:wght@400;600&family=Noto+Sans+JP:wght@400;500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="もやし炒め図鑑 ホーム">
+        <span class="brand-mark">も</span>
+        <span><strong>もやし炒め</strong><small>図鑑</small></span>
+      </a>
+      <nav aria-label="メインナビゲーション">
+        <a href="#recipes">レシピ</a>
+        <a href="#tips">おいしく作るコツ</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Moyashi stir-fry collection</p>
+          <h1>いつものもやしを、<br /><em>ごちそうに。</em></h1>
+          <p class="hero-lead">シャキシャキの食感を主役にする、15の炒め方。冷蔵庫にあるもので、今日の一皿が決まります。</p>
+          <a class="button button-dark" href="#recipes">レシピを探す <span>↓</span></a>
+        </div>
+        <div class="hero-art" aria-label="もやし炒めのイメージ">
+          <div class="steam steam-one"></div><div class="steam steam-two"></div>
+          <div class="plate"><div class="dish"></div><span class="garnish garnish-one"></span><span class="garnish garnish-two"></span><span class="garnish garnish-three"></span></div>
+          <span class="floating-note note-one">シャキッ</span><span class="floating-note note-two">かんたん</span>
+        </div>
+      </section>
+
+      <section class="recipe-section" id="recipes">
+        <div class="section-heading">
+          <div><p class="eyebrow">15 recipes</p><h2>気分で選ぶ、<br class="mobile-only" />もやし炒め。</h2></div>
+          <p class="section-intro">味つけや具材を変えるだけで、もやしは毎日違う顔に。気になるレシピをクリックして、作り方をチェック。</p>
+        </div>
+        <div class="filters" role="group" aria-label="レシピの絞り込み">
+          <button class="filter active" data-filter="all">すべて <span>15</span></button>
+          <button class="filter" data-filter="meat">お肉 <span>5</span></button>
+          <button class="filter" data-filter="seafood">海鮮 <span>3</span></button>
+          <button class="filter" data-filter="veggie">野菜だけ <span>4</span></button>
+          <button class="filter" data-filter="spicy">ピリ辛 <span>3</span></button>
+        </div>
+        <div class="recipe-grid" id="recipe-grid"></div>
+        <p class="empty-state" id="empty-state" hidden>この条件のレシピはありません。</p>
+      </section>
+
+      <section class="tips-section" id="tips">
+        <div class="tips-heading"><p class="eyebrow">The secret to crispness</p><h2>もやし炒め、<br /><em>3つのコツ。</em></h2></div>
+        <div class="tips-list">
+          <article><span class="tip-number">01</span><div><h3>洗ったら、しっかり水切り</h3><p>水っぽさの原因は余分な水分。ザルに上げてから、キッチンペーパーで軽く押さえます。</p></div></article>
+          <article><span class="tip-number">02</span><div><h3>フライパンを先に熱く</h3><p>油を入れて煙が出る直前まで温めて。もやしを入れたら、強火で一気に仕上げます。</p></div></article>
+          <article><span class="tip-number">03</span><div><h3>味つけは最後に、手早く</h3><p>調味料を早く入れすぎると水が出ます。火を止める直前に加えて、さっと混ぜれば完成。</p></div></article>
+        </div>
+      </section>
+    </main>
+    <footer><span>© 2026 もやし炒め図鑑</span><span>毎日の台所に、シャキシャキを。</span></footer>
+
+    <dialog id="recipe-dialog" class="recipe-dialog">
+      <button class="dialog-close" aria-label="レシピを閉じる">×</button>
+      <div id="dialog-content"></div>
+    </dialog>
+    <script src="script.js"></script>
+  </body>
+</html>
